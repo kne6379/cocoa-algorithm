@@ -65,6 +65,6 @@
 | 4주차   | 4_week               | [기능 개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586) | `진행 완료`  |
 | 5주차   | 5_week               | [프로세스](https://school.programmers.co.kr/learn/courses/30/lessons/42587) | `진행 완료`  |
 | 6주차   | 6_week               | [행렬의 곱셈](https://school.programmers.co.kr/learn/courses/30/lessons/12949?language=javascript) | `진행 완료` |
-| 7주차   | 7_week               | [예상 대진표](https://school.programmers.co.kr/learn/courses/30/lessons/12985?language=javascript) |  |
+| 7주차   | 7_week               | [예상 대진표](https://school.programmers.co.kr/learn/courses/30/lessons/12985?language=javascript) |  |
 ### 참고 
 https://github.com/soo5717/2021-Algorithm-Study
