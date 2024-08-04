@@ -1,17 +1,15 @@
 function solution(n, a, b) {
-  let answer = 0;
+  let round = 0;
 
-  const recursion = (a, b, answer) => {
+  const recursion = (a, b, round) => {
     if (a !== b) {
       a = Math.ceil(a / 2);
       b = Math.ceil(b / 2);
-      answer++;
-      return recursion(a, b, answer);
+      round++;
+      return recursion(a, b, round);
     }
-    return answer;
+    return round;
   };
-  answer = recursion(a, b, answer);
+  let answer = recursion(a, b, round);
   return answer;
 }
-
-console.log(solution());
