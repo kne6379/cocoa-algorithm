@@ -13,3 +13,5 @@ function solution(n, a, b) {
   answer = recursion(a, b, answer);
   return answer;
 }
+
+console.log(solution());
