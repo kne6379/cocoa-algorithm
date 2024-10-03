@@ -244,8 +244,7 @@ function solution(video_len, pos, op_start, op_end, commands) {
   const total_op_end_second = convert_to_seconds(op_end_min, op_end_sec);
 
   // 오프닝 시간에 속해있는지 검사
-
-  total_second = handle_opening_time(
+  total_second = skip_opening_time(
     total_second,
     total_op_start_second,
     total_op_end_second
@@ -254,22 +253,16 @@ function solution(video_len, pos, op_start, op_end, commands) {
   // 커맨드 배열 검사, 분기에 맞게 매개변수 입력, 함수 호출
   commands.forEach((v) => {
     if (v === "next") {
-      total_second = adjust_time(
-        total_second,
-        10,
-        total_video_second,
-        total_op_start_second,
-        total_op_end_second
-      );
+      total_second = adjust_time(total_second, 10, total_video_second);
     } else if (v === "prev") {
-      total_second = adjust_time(
-        total_second,
-        -10,
-        total_video_second,
-        total_op_start_second,
-        total_op_end_second
-      );
+      total_second = adjust_time(total_second, -10, total_video_second);
     }
+    // 변환된 값이 오프닝 시간에 속하는지 다시 한번 검사
+    total_second = skip_opening_time(
+      total_second,
+      total_op_start_second,
+      total_op_end_second
+    );
   });
 
   // 결과값 반환. 다시 분과 초로 변환
@@ -284,7 +277,7 @@ function solution(video_len, pos, op_start, op_end, commands) {
   return result;
 }
 
-function handle_opening_time(
+function skip_opening_time(
   total_second,
   total_op_start_second,
   total_op_end_second
@@ -306,25 +299,12 @@ function convert_to_seconds(min, sec) {
   return min * 60 + sec;
 }
 
-function adjust_time(
-  total_second,
-  operation,
-  total_video_second,
-  total_op_start_second,
-  total_op_end_second
-) {
+function adjust_time(total_second, operation, total_video_second) {
   // 10초 뺼셈 혹은 덧셈
   total_second = total_second + operation;
 
   // 영상 시간 최소 시간과 최대 시간을 제한
   total_second = Math.max(0, Math.min(total_video_second, total_second));
-
-  // 변환된 값이 오프닝 시간에 속하는지 다시 한번 검사
-  total_second = handle_opening_time(
-    total_second,
-    total_op_start_second,
-    total_op_end_second
-  );
 
   return total_second;
 }
