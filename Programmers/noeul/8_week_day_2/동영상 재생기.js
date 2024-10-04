@@ -308,3 +308,67 @@ function adjust_time(total_second, operation, total_video_second) {
 
   return total_second;
 }
+
+// 창준님 풀이
+function splitTimestamp(timestamp) {
+  return timestamp.split(":").map((digits) => Number(digits));
+}
+
+function joinTimestamp(min, sec) {
+  const mm = min < 10 ? "0" + String(min) : String(min);
+  const ss = sec < 10 ? "0" + String(sec) : String(sec);
+  return mm + ":" + ss;
+}
+
+function getTimeInSeconds(timestamp) {
+  const [min, sec] = splitTimestamp(timestamp);
+  return min * 60 + sec;
+}
+
+function getTimeAsTimestamp(seconds) {
+  const sec = seconds % 60;
+  const min = (seconds - sec) / 60;
+  return joinTimestamp(min, sec);
+}
+
+function isWithinOpening(opStart, opEnd, pos) {
+  const openingStart = getTimeInSeconds(opStart);
+  const openingEnd = getTimeInSeconds(opEnd);
+  const curr = getTimeInSeconds(pos);
+
+  return openingStart <= curr && curr <= openingEnd;
+}
+
+function prev(pos) {
+  const curr = getTimeInSeconds(pos);
+  const prev = curr < 10 ? 0 : curr - 10;
+  return getTimeAsTimestamp(prev);
+}
+
+function next(videoLen, pos) {
+  const videoLength = getTimeInSeconds(videoLen);
+  const curr = getTimeInSeconds(pos);
+  const next = curr < videoLength - 10 ? curr + 10 : videoLength;
+  return getTimeAsTimestamp(next);
+}
+
+function solution(videoLen, pos, opStart, opEnd, commands) {
+  let answer = pos;
+
+  if (isWithinOpening(opStart, opEnd, answer)) answer = opEnd;
+
+  commands.forEach((command) => {
+    switch (command) {
+      case "prev":
+        answer = prev(answer);
+        break;
+      case "next":
+        answer = next(videoLen, answer);
+        break;
+    }
+
+    if (isWithinOpening(opStart, opEnd, answer)) answer = opEnd;
+  });
+
+  return answer;
+}
