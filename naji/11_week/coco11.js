@@ -18,24 +18,45 @@ function solution(rank, attendance) {
 
 // 문제 https://school.programmers.co.kr/learn/courses/30/lessons/181830
 
+// function solution(arr) {
+//     var answer = [];
+//     const maxSize = Math.max(arr.length, arr[0].length);
+
+//     for (let i = 0; i < maxSize; i++) {
+//         if (i < arr.length) {
+//             const newRow = arr[i].slice(); 
+//             while (newRow.length < maxSize) {
+//                 newRow.push(0); 
+//             }
+//             answer.push(newRow);
+//         } else {
+// const newRow = arr.slice();
+// while(newRow.length<maxSize){
+//     newRow.push(0)
+// }
+//             answer.push(newRow);
+//         }
+//     }
+//     return answer; 
+// }
 function solution(arr) {
     var answer = [];
-    const maxSize = Math.max(arr.length, arr[0].length);
 
+    const maxSize = Math.max(arr.length, arr[0].length);
     for (let i = 0; i < maxSize; i++) {
         if (i < arr.length) {
-            const newRow = arr[i].slice(); 
+            const newRow = arr[i].slice();
+            console.log("newRow1->", newRow);
             while (newRow.length < maxSize) {
                 newRow.push(0); 
             }
             answer.push(newRow);
         } else {
-const newRow = arr.slice();
-while(newRow.length<maxSize){
-    newRow.push(0)
-}
+            const newRow = Array(maxSize).fill(0); 
+            console.log("newRow2->", newRow);
             answer.push(newRow);
         }
     }
-    return answer; 
+
+    return answer;
 }
