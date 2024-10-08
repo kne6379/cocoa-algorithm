@@ -29,7 +29,7 @@ function solution(n, wires) {
 
   return answer;
 }
-////시도2 : 지금 풀이 부분
+//시도2 : 지금 풀이 부분
 function solution(n, wires) {
   //wires 배열을 사용하여 송전탑 간의 연결 정보를 그래프로 구성 = push 사용
   //

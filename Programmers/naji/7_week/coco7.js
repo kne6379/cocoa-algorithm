@@ -21,8 +21,6 @@ function solution(n, a, b) {
 
   return answer;
 }
-//2번째 게임 : 1,2번 중 이긴 1명이 1번, 3번째 4번째 중 이긴 1명이 2번 ...
-
 //참가자 a 와 참가자 b가 몇번째 게임에서 붙을 건지?
 
 function solution(n, a, b) {

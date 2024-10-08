@@ -54,7 +54,7 @@ function solution(a, b, c, d) {
   return answer;
 }
 
-//// 2번째 풀이
+////// 2번째 풀이
 function solution(a, b, c, d) {
     let answer = 0
   const count = {};

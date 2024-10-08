@@ -12,7 +12,7 @@
 //     return answer;
 // }
 
-// 실패
+// 실패 : 재풀이 필요
 function solution(chicken) {
     var answer = 0; 
     var totalCoupon = 0;

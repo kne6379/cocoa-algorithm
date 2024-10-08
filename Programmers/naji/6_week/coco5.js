@@ -1,4 +1,4 @@
-//////내 식
+//내 식
 function solution(priorities, location) {
   var answer = 0;
   // 첫번째 요소를 가장 큰 값으로 초기화
