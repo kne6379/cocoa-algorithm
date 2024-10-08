@@ -29,7 +29,7 @@ function solution(progresses, speeds) {
       const countProgress = count(Progress);
       console.log(countProgress);
       // rightPop++;
-      // console.log(progresses[i], speeds[i]);
+ 
       // return count(progresses[i], speeds[i]);
     }
     // 100보다 크면 배포 가능, leftPush 카운트 해주기

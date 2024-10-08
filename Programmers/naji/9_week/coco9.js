@@ -7,7 +7,7 @@ function solution(spell, dic) {
     var answer = 0;
     //spell 에 있는 단어 모두 dic 에 있는 지 확인 
     
-// 모두 dic 있으면 1, 아니면 2 return.
+// 모두 dic 있으면 1, 아니면 2 return
 
     return answer;
 }

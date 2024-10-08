@@ -29,10 +29,10 @@ function solution(n, wires) {
 
   return answer;
 }
-//시도2 : 지금 풀이 부분
+// 시도2 : 지금 풀이 부분
 function solution(n, wires) {
   //wires 배열을 사용하여 송전탑 간의 연결 정보를 그래프로 구성 = push 사용
-  //
+
   //각 전선을 하나씩 끊어보며 네트워크가 어떻게 분할 되는 지 확인
 
   //bfs를 사용하여 각 부분의 송전탑 수 계산

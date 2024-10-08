@@ -40,7 +40,6 @@ function solution(rank, attendance) {
 //     return answer; 
 // }
 
-
 function solution(arr) {
     var answer = [];
 

@@ -35,7 +35,7 @@ function solution(n, wires) {
   return answer;
 }
 
-////답변///
+////답변////
 function solution(n, wires) {
   let answer = Infinity; // 최소 차이를 저장할 변수, 초기값은 무한대로 설정
   const graph = Array.from({ length: n + 1 }, () => []);
