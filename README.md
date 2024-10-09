@@ -3,7 +3,7 @@
 > 코딩 테스트 준비를 위한 스터디입니다. 
 
 - 기간: 2024년 5월~
-- 정기 회의: 금요일 오후 10시
+- 정기 회의: 화, 금요일 오전 9시
 - 참고 사이트: [프로그래머스](https://programmers.co.kr/learn/challenges), [백준](https://www.acmicpc.net/)
 - 언어: 파이썬, 자바스크립트
 
@@ -11,7 +11,7 @@
 
 #### 문제 풀이
 
-1. 주마다 1문제씩 선정해서 문제 풀이를 진행함. 회의 시간에는 각자 1문제 풀이 설명.
+1. 회마다 3문제를 준비하여 풀이. 회의 시간에는 각자 문제 풀이 설명.
    1. 개념+알고리즘+풀이 방식 자세하게 설명하기. 
 2. 깃허브 활용해서 Pull Request로 코드 리뷰 진행함.
    1. 서로에 대한 코드 리뷰 금요일 스터디 전까지 완료하기 
@@ -46,15 +46,18 @@
 
 #### 프로그래머스
 
-- Programmers/noeul/폴더명/문제명.js
-- Programmers/jiyoon/폴더명/문제명.js
-- Programmers/taehyun/폴더명/문제명.py
+- Programmers/noeul/_week/_day/문제명.js
+- Programmers/jiyoon/_week/_day/문제명.js
+- Programmers/taehyun/_week/_day/문제명.py
 
 #### 백준
 
-- Baekjoon/noeul/폴더명/문제번호_문제명.js
-- Baekjoon/jiyoon/폴더명/문제번호_문제명.js
-- Baekjoon/taehyun/폴더명/문제번호_문제명.py
+- Baekjoon/noeul/_week/_day/문제명.js
+- Baekjoon/jiyoon/_week/_day/문제명.js
+- Baekjoon/taehyun/_week/_day/문제명.py
+
+#### 예시
+- Programmers/noeul/8_week/1_day/문제명.js
 
 ## 일정표
 
