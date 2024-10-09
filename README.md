@@ -46,13 +46,13 @@
 
 #### 프로그래머스
 
-- Programmers/noeul/_week/_day/문제명.js
+- Programmers/noeul/_week/_day/문제명.js
 - Programmers/jiyoon/_week/_day/문제명.js
 - Programmers/taehyun/_week/_day/문제명.py
 
 #### 백준
 
-- Baekjoon/noeul/_week/_day/문제명.js
+- Baekjoon/noeul/_week/_day/문제명.js
 - Baekjoon/jiyoon/_week/_day/문제명.js
 - Baekjoon/taehyun/_week/_day/문제명.py
 
