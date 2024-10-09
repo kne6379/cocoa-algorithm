@@ -1,4 +1,4 @@
-//////내 식
+//내 식
 function solution(priorities, location) {
   var answer = 0;
   // 첫번째 요소를 가장 큰 값으로 초기화
@@ -15,7 +15,7 @@ function solution(priorities, location) {
   return largest;
 }
 
-///
+
 //첫번째 요소를 가장 큰 값으로 초기화
 //반복문 돌리기
 //location 의 숫자가 priorities 배열에 몇번째인자 그 숫자를 찾아서 순서를 return
