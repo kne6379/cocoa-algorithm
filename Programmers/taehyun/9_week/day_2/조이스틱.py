@@ -9,7 +9,6 @@ for char in name: 알파벳 변경 조작 횟수를 계산하여 answer에 더�
     두 값 중 작은 값 선택하여 더함
 
 #좌우 이동 최소화 계산
-min_move ← n - 1 (오른쪽으로 끝까지 가는 경우를 기본값으로 설정)
     for i from 0 to n - 1:
     next_i ← i + 1
     while next_i < n and name[next_i] == 'A':
